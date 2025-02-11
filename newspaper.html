@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Times</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .newspaper {
+            max-width: 900px;
+            margin: auto;
+            background: rgb(181, 179, 179);
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            border-bottom: 3px solid black;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .article {
+            flex: 1;
+            min-width: 250px;
+            background: #fff;
+            padding: 15px;
+            border: 5px solid #ddd;
+        }
+        .article h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .article p {
+            font-size: 16px;
+            text-align: justify;
+                }
+        .A1{
+            flex-shrink: 3;
+        }
+        .A11{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="header">Daily Times</div>
+        <div class="articles">
+            <div class="article A11">
+                <h2>Breaking News</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+            </div>
+            <div class="article A1">
+                <h2>Sports Update</h2>
+                <p>Aliquam erat volutpat. Quisque a justo ac sapien auctor venenatis.</p>
+            </div>
+            <div class="article">
+                <h2>Technology</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ad, sapiente corrupti aliquid ea non.</p>
+            </div>
+            <div class="article">
+                <h2>Health & Wellness</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
